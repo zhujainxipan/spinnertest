@@ -1,0 +1,128 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:127), pid=4012, tid=2116
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (8.0_40-b25) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.40-b25 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000257d800):  JavaThread "Unknown thread" [_thread_in_vm, id=2116, stack(0x00000000025b0000,0x00000000026b0000)]
+
+Stack: [0x00000000025b0000,0x00000000026b0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x32b47a]
+V  [jvm.dll+0x2797f3]
+V  [jvm.dll+0x27a489]
+V  [jvm.dll+0x29a974]
+C  [kernel32.dll+0x99400]
+C  [ntdll.dll+0x96258]
+C  [ntdll.dll+0x14f58]
+C  [ntdll.dll+0x34f4d]
+C  [ntdll.dll+0x15b3c]
+C  [ntdll.dll+0x4f638]
+V  [jvm.dll+0x21bc71]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000257d800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=2116, stack(0x00000000025b0000,0x00000000026b0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 1.969 loading class java/lang/CharSequence done
+Event: 1.970 loading class java/lang/String done
+Event: 1.970 loading class java/lang/Class
+Event: 1.970 loading class java/lang/reflect/AnnotatedElement
+Event: 2.003 loading class java/lang/reflect/AnnotatedElement done
+Event: 2.003 loading class java/lang/reflect/GenericDeclaration
+Event: 2.004 loading class java/lang/reflect/GenericDeclaration done
+Event: 2.004 loading class java/lang/reflect/Type
+Event: 2.004 loading class java/lang/reflect/Type done
+Event: 2.004 loading class java/lang/Class done
+
+
+Dynamic libraries:
+0x000000013faa0000 - 0x000000013fad7000 	D:\JDK\bin\javaw.exe
+0x0000000077490000 - 0x000000007763c000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000077270000 - 0x000000007738f000 	C:\Windows\system32\kernel32.dll
+0x000007fefd730000 - 0x000007fefd79c000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefe770000 - 0x000007fefe84b000 	C:\Windows\system32\ADVAPI32.dll
+0x000007feff030000 - 0x000007feff0cf000 	C:\Windows\system32\msvcrt.dll
+0x000007feff380000 - 0x000007feff39f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefebd0000 - 0x000007fefecfe000 	C:\Windows\system32\RPCRT4.dll
+0x0000000077390000 - 0x000000007748a000 	C:\Windows\system32\USER32.dll
+0x000007fefd7c0000 - 0x000007fefd827000 	C:\Windows\system32\GDI32.dll
+0x000007fefebb0000 - 0x000007fefebbe000 	C:\Windows\system32\LPK.dll
+0x000007fefe6a0000 - 0x000007fefe76a000 	C:\Windows\system32\USP10.dll
+0x000007fefc020000 - 0x000007fefc214000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7600.16661_none_fa62ad231704eab7\COMCTL32.dll
+0x000007fefefb0000 - 0x000007feff021000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefeb00000 - 0x000007fefeb2e000 	C:\Windows\system32\IMM32.DLL
+0x000007feff460000 - 0x000007feff569000 	C:\Windows\system32\MSCTF.dll
+0x000000006a360000 - 0x000000006a432000 	D:\JDK\bin\msvcr100.dll
+0x0000000063ce0000 - 0x0000000064563000 	D:\JDK\bin\server\jvm.dll
+0x000007fefa060000 - 0x000007fefa069000 	C:\Windows\system32\WSOCK32.dll
+0x000007feff570000 - 0x000007feff5bd000 	C:\Windows\system32\WS2_32.dll
+0x000007fefebc0000 - 0x000007fefebc8000 	C:\Windows\system32\NSI.dll
+0x000007fefb3c0000 - 0x000007fefb3fb000 	C:\Windows\system32\WINMM.dll
+0x000007fefc510000 - 0x000007fefc51c000 	C:\Windows\system32\VERSION.dll
+0x0000000077660000 - 0x0000000077667000 	C:\Windows\system32\PSAPI.DLL
+0x0000000074590000 - 0x000000007459f000 	D:\JDK\bin\verify.dll
+0x0000000074540000 - 0x0000000074569000 	D:\JDK\bin\java.dll
+0x00000000744f0000 - 0x0000000074506000 	D:\JDK\bin\zip.dll
+0x000007fee9190000 - 0x000007fee92b5000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\deve_tools\Android_SDK_windows\sdk\platforms\android-19\android.jar 
+java_command: com.example.sjliandong.Test
+java_class_path (initial): E:\workspace\eclipsedev2\SJliandong\bin\classes;E:\workspace\eclipsedev2\SJliandong\libs\android-support-v4.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\JDK
+CLASSPATH=.;D:\JDK\lib\dt.jar;D:\JDK\lib\tools.jar;D:\deve_tools\apache-tomcat-6.0.43\lib\servlet-api.jar;
+PATH=D:/JDK/bin/server;D:/JDK/bin;D:/JDK/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\SYSTEM32;C:\Windows;C:\Windows\SYSTEM32\WBEM;C:\Windows\SYSTEM32\WINDOWSPOWERSHELL\V1.0\;;C:\PROGRAM FILES\DELL\DELL WIRELESS WLAN CARD;C:\PROGRAM FILES (X86)\ATI TECHNOLOGIES\ATI.ACE\CORE-STATIC;D:\JDK\bin;D:\JDK\jre\bin;D:\deve_tools\apache-tomcat-6.0.43\bin;;D:\eclipse\eclipse-java-luna-SR2-win32-x86_64\eclipse;
+USERNAME=annuo
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 23 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7600 (6.1.7600.17206)
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 23 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, tsc
+
+Memory: 4k page, physical 2093428k(681460k free), swap 4642204k(1353636k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.40-b25) for windows-amd64 JRE (1.8.0_40-b25), built on Feb 10 2015 21:53:57 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Wed Apr 22 20:45:52 2015
+elapsed time: 3 seconds (0d 0h 0m 3s)
+
